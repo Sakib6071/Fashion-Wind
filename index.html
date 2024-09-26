@@ -22,10 +22,10 @@
 <body>
     <header class=" bg-green-200">
         <nav class="w-11/12 m-auto flex flex-row py-3 items-center">
-            <div class="basis-4/12">
+            <div class="basis-6/12 sm:basis-2/12">
                 <h1 class="text-4xl font-extrabold  text-green-900 gelasio">Rivo</h1>
             </div>
-            <div class="basis-5/12">
+            <div class="basis-6/12 hidden sm:block">
                 <ul class="list-none flex flex-row justify-evenly poppins font-medium text-lg text-green-950">
                     <li class=""><a href="#">Home</a></li>
                     <li class=""><a href="#">Shop</a></li>
@@ -34,7 +34,7 @@
 
                 </ul>
             </div>
-            <div class="basis-3/12 flex flex-row justify-end items-center">
+            <div class=" basis-6/12 sm:basis-4/12 flex flex-row justify-end items-center">
                 <div class="cart">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
@@ -44,14 +44,14 @@
                 </div>
                 <div class="button ml-6">
                     <button
-                        class="font-medium poppins text-lg border-2 border-green-900 px-6 py-1 text-green-950 rounded-sm hover:bg-green-900 hover:text-white">Log
+                        class="font-medium poppins text-base sm:text-lg border-2 border-green-900 px-6 py-1 text-green-950 rounded-sm hover:bg-green-900 hover:text-white">Log
                         In</button>
                 </div>
             </div>
         </nav>
-        <section class="heading w-11/12 m-auto flex flex-row items-center my-8 py-5">
+        <section class="heading w-11/12 m-auto flex flex-col sm:flex-row gap-10 items-center my-8 py-5">
             <div class="headingDescription basis-6/12">
-                <h2 class="font-bold rufina text-8xl  text-green-950">Discover and Find Your Own Fashion!</h2>
+                <h2 class="font-bold rufina text-3xl sm:text-6xl lg:text-8xl text-green-950">Discover and Find Your Own Fashion!</h2>
                 <p class="text-green-900 text-xl poppins my-5">Explore our curated collection of stylish clothing and
                     accessories tailored to your unique taste.</p>
                 <button class="bg-green-900 text-xl px-6 py-2 text-white shadow-2xl poppins shadow-gray-700">Explore
@@ -111,13 +111,13 @@
         </section>
         <section id="ourProducts" class="my-20 w-11/12 m-auto">
             <h2 class="roboto-slab text-5xl font-medium text-green-900 text-center">Our Products</h2>
-            <ul class="productNav list-none flex flex-row w-6/12 mx-auto poppins font-medium justify-around mt-6">
+            <ul class="productNav list-none flex flex-row w-10/12 sm:w-6/12 mx-auto poppins font-medium justify-around mt-6">
                 <li>Sale</li>
                 <li class="text-green-900 underline underline-offset-4">Hot</li>
                 <li>New Arrivals</li>
                 <li>Accessories</li>
             </ul>
-            <div class="showProducts mt-9 grid grid-cols-4 gap-10">
+            <div class="showProducts mt-9 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
                 <div class="card">
                     <div class="img bg-gray-200 rounded-md">
                         <img class="w-70 h-80 mx-auto" src="resources/images/product1.png" alt="">
@@ -198,29 +198,29 @@
         </section>
 
 
-        <section id="offer" class="my-24 w-11/12 m-auto grid grid-cols-2 bg-green-200 pt-10 px-5">
+        <section id="offer" class="my-24 w-11/12 m-auto grid grid-cols-1  md:grid-cols-2 bg-green-200 pt-10 px-5">
             <div class="figure relative">
-                <img class="w-8/12 mx-auto" src="resources/images/offer.png" alt="">
-                <img class="absolute bottom-14 left-14" src="resources/images/background.png" alt="">
+                <img class="w-8/12 mx-auto z-50" src="resources/images/offer.png" alt="">
+                <img class="absolute bottom-14 z-10 left-14" src="resources/images/background.png" alt="">
             </div>
             <div class="description flex items-center">
                 <div class="">
-                    <h1 class="roboto-slab font-bold text-green-900 text-5xl mt-5">Exclusive Offer</h1>
+                    <h1 class="roboto-slab font-bold text-green-900 text-5xl mt-5 md:mt-1">Exclusive Offer</h1>
                     <p class="poppins text-xl mt-3 pr-5">Unlock the ultimate style upgrade with our exclusive offer
                         Enjoy
                         savings of up to 40% off on our latest New Arrivals</p>
                     <div class="time flex flex-row mt-7">
-                        <div class="w-28 h-28 bg-slate-50 shadow-lg rounded-md ">
-                            <p class="text-3xl text-center poppins font-semibold pt-5">06</p>
-                            <p class="text-center font-medium text-xl poppins">Days</p>
+                        <div class="w-18 p-2 md:w-28 h-28 bg-slate-50 shadow-lg rounded-md ">
+                            <p class="text-xl sm:text-3xl text-center poppins font-semibold pt-5">06</p>
+                            <p class="text-center font-medium text-lg sm:text-xl poppins">Days</p>
                         </div>
-                        <div class="w-28 mx-5 h-28 bg-slate-50 shadow-lg rounded-md ">
-                            <p class="text-3xl text-center poppins font-semibold pt-5">12</p>
-                            <p class="text-center font-medium text-xl poppins">Hours</p>
+                        <div class="w-18 p-2 md:w-28 mx-5 h-28 bg-slate-50 shadow-lg rounded-md ">
+                            <p class="text-xl sm:text-3xl text-center poppins font-semibold pt-5">12</p>
+                            <p class="text-center font-medium text-lg sm:text-xl poppins">Hours</p>
                         </div>
-                        <div class="w-28 h-28 bg-slate-50 shadow-lg rounded-md ">
-                            <p class="text-3xl text-center poppins font-semibold pt-5">17</p>
-                            <p class="text-center font-medium text-xl poppins">Mins</p>
+                        <div class="w-18 p-2 md:w-28 h-28 bg-slate-50 shadow-lg rounded-md ">
+                            <p class="text-xl sm:text-3xl text-center poppins font-semibold pt-5">17</p>
+                            <p class="text-center font-medium text-lg sm:text-xl poppins">Mins</p>
                         </div>
                     </div>
                     <button
@@ -233,7 +233,7 @@
             <h2 class="roboto-slab text-5xl font-medium text-green-900 text-center">Designer Clothes For You</h2>
             <p class="text-center mt-4 text-base text-green-800 poppins font-medium">Immerse yourself in the world of
                 luxury fashion with our meticulously crafted designer clothes!</p>
-            <div class="items flex flex-row gap-1 justify-evenly mt-10">
+            <div class="items flex flex-col md:flex-row gap-10 sm:justify-evenly mt-10">
                 <div class="card">
                     <div class="img bg-gray-300 rounded-md flex justify-center hover:bg-green-200">
                         <img class="w-80" src="resources/images/foryou1.png" alt="">
@@ -243,7 +243,7 @@
                         such as handbags, scarves, belts, and hats.
                     </p>
                 </div>
-                <div class="card mx-20">
+                <div class="card md:mx-20">
                     <div class="img bg-gray-300 rounded-md flex justify-center hover:bg-green-200">
                         <img class="w-80" src="resources/images/foryou2.png" alt="">
                     </div>
@@ -265,7 +265,7 @@
         </section>
         <section id="feedback" class="my-20 w-11/12 m-auto">
             <h2 class="roboto-slab text-5xl font-medium text-green-900 text-center">Feedback Corner</h2>
-            <div class="feedbacks flex flex-row mt-10">
+            <div class="feedbacks flex flex-col gap-5 sm:flex-row mt-10">
                 <div class="shadow-xl p-4">
                     <img src="resources/images/quote-left.png" alt="">
                     <h3 class="text-2xl text-green-900 font-semibold mt-5 roboto-slab">John Doe</h3>
@@ -273,7 +273,7 @@
                         website is user-friendly, the checkout process was smooth, and the clothes I ordered fit
                         perfectly. I'm beyond satisfied!</p>
                 </div>
-                <div class="shadow-xl bg-green-200 p-4 mx-10">
+                <div class="shadow-xl bg-green-200 p-4 mx-0 sm:mx-10">
                     <img src="resources/images/quote-left.png" alt="">
                     <h3 class="text-2xl text-green-900 font-semibold mt-5 roboto-slab">Emily Wilson</h3>
                     <p class="poppins text-sm mt-3">I absolutely love the quality and style of the clothing I purchased
@@ -299,17 +299,17 @@
     </main>
 
     <footer class="bg-green-900">
-        <div id="footer" class="mt-20 w-11/12 m-auto py-20 flex flex-row">
-            <div class="w-4/12">
+        <div id="footer" class="mt-20 w-11/12 m-auto py-20 flex flex-row flex-wrap gap-10 sm:gap-3 justify-center lg:justify-between">
+            <div class="w-full lg:w-4/12 text-center">
                 <h2 class="text-4xl font-extrabold  text-white gelasio">Rivo</h2>
                 <p class="text-lg text-white mt-3 font-normal poppins uppercase">Social Media</p>
-                <ul class="social list-none flex flex-row mt-3">
+                <ul class="social list-none flex flex-row mt-3 justify-center">
                     <li><a href="#"><img src="resources/images/facebook.png" alt=""></a></li>
                     <li class="mx-6"><a href="#"><img src="resources/images/twitter.png" alt=""></a></li>
                     <li><a href="#"><img src="resources/images/instagram.png" alt=""></a></li>
                 </ul>
             </div>
-            <div class="w-2/12">
+            <div class="w-5/ lg:2/12 text-center">
                 <p class="text-lg text-white mt-3 font-normal poppins uppercase">Shop</p>
                 <ul class="text-white grid gap-2 mt-3">
                     <li><a href="#">Products</a></li>
@@ -318,7 +318,7 @@
                     <li><a href="#">Release</a></li>
                 </ul>
             </div>
-            <div class="w-2/12">
+            <div class="w-5/ lg:2/12 text-center">
                 <p class="text-lg text-white mt-3 font-normal poppins uppercase">Company</p>
                 <ul class="text-white grid gap-2 mt-3">
                     <li><a href="#">About Us</a></li>
@@ -327,7 +327,7 @@
                     <li><a href="#">Support</a></li>
                 </ul>
             </div>
-            <div class="w-4/12">
+            <div class="w-full lg:w-4/12 text-center">
                 <p class="text-lg text-white mt-3 font-normal poppins uppercase">Stay Up To Date</p>
                 <form action="#">
                     <div class="mt-5 grid grid-cols-4 gap-0">
